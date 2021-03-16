@@ -1,7 +1,7 @@
 const request = require('request')
 
 const geocode = (address, callback) => {
-    const { geocodeApiKey } = require('./api-keys')
+    const { geocodeApiKey } = process.env.geocodeApiKey || require('./api-keys')
     const url =
         'https://api.mapbox.com/geocoding/v5/mapbox.places/' +
         encodeURIComponent(address) +
