@@ -1,0 +1,7 @@
+const forecastApiKey = 'API_KEY'
+const geocodeApiKey = 'API_KEY'
+
+module.exports = {
+    forecastApiKey,
+    geocodeApiKey,
+}
